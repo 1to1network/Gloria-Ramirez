@@ -1,0 +1,1276 @@
+<p>&nbsp;</p>
+<p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+</p>
+<p>
+    <style type="text/css">
+        /*--cuadritos instituciones educativas--*/
+        blockquote {
+            padding: 25px 0px 2px 6px;
+            margin: 0 0 20px;
+            font-size: 16.7px;
+            border-left: 5px solid #eee;
+        }
+
+        h2.notice-principal {
+            font-size: 1.3em;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        .thumbnail a>img,
+        .thumbnail>img {
+            max-width: 50%;
+        }
+
+        h12 {
+            font-family: montserrat, serif;
+            font-size: 30px;
+            color: #BC955B;
+            font-weight: 700;
+        }
+
+        /*.brand-logo{height:68px}.navbar-brand>img.logo_sep{height:auto;width:120px}*/
+        .margint-20px {
+            max-width: 80%;
+            text-align: center
+        }
+
+        .flag-banner {
+            background: transparent url("https://www.gob.mx/cms/uploads/image/file/498703/bannerprincipal.png") no-repeat center center;
+            background-size: cover;
+            height: 370px;
+            top: 0
+        }
+
+        .flag-banner img {
+            height: auto;
+            width: 100%;
+            overflow: hidden
+        }
+
+        .mid-buffer {
+            margin: 32px 0
+        }
+
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: 1rem;
+            padding: 1rem 3rem
+        }
+
+        .categorias .card-gob {
+            height: 300px !important
+        }
+
+        .titulocategoria a:visited {
+            text-decoration: none;
+            color: #000
+        }
+
+        .card-img-gob {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 0;
+            margin-top: 5%
+        }
+
+        .card-img-top {
+            border-top-left-radius: calc(.25rem - 1px);
+            border-top-right-radius: calc(.25rem - 1px)
+        }
+
+        .card-title {
+            margin-bottom: 2px;
+            height: 4rem;
+            color: #545454;
+            font-size: 1.35em;
+            text-decoration: none
+        }
+
+        .card-gob ul li {
+            padding: 1rem 0 .5rem
+        }
+
+        .card-gob p a,
+        .card-gob ul a {
+            text-decoration: none;
+            color: #706f6f
+        }
+
+        .pleca-roja {
+            border-bottom: 3px solid #a42145
+        }
+
+        .boton-rojo {
+            background: #a42145;
+            color: #fff;
+            margin: 1rem auto;
+            border-radius: 50px;
+            width: 146px;
+            padding: 8px
+        }
+
+        .boton-rojo a {
+            color: #fff;
+            text-decoration: none
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        hr.red {
+            display: none
+        }
+
+        h3 {
+            color: #a42145
+        }
+
+        #googleMap {
+            background-image: url("https://www.gob.mx/cms/uploads/image/file/499915/brasil-interior.jpg") !important
+        }
+
+        .rslides {
+            position: relative;
+            list-style: none;
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            border-bottom: 3px solid #A42145;
+        }
+
+        /* Slider principal */
+        .rslides li {
+            /*-webkit-backface-visibility: hidden;*/
+            position: absolute;
+            display: none;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .rslides li:first-child {
+            position: relative;
+            display: block;
+            float: left;
+        }
+
+        .rslides img {
+            display: block;
+            height: auto;
+            float: left;
+            width: 100%;
+            border: 0;
+        }
+
+        .navctrl {
+            position: relative;
+            padding-top: 40px;
+        }
+
+        .navctrl_nav {
+            z-index: 3;
+            position: absolute;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            /*top: 50%; left: 0;*/
+            opacity: 0.7;
+            text-indent: -9999px;
+            overflow: hidden;
+            text-decoration: none;
+            height: 61px;
+            width: 38px;
+            background: red;
+            margin-top: -180px;
+        }
+
+        .navctrl_nav:active {
+            opacity: 1.0;
+        }
+
+        .navctrl_nav.next {
+            left: auto;
+            background-position: right top;
+            right: 0;
+        }
+
+        .navctrl_nav:focus {
+            outline: none;
+        }
+
+        .navctrl_tabs {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .navctrl_tabs li {
+            display: inline;
+            float: none;
+            _float: left;
+            *float: left;
+            margin-right: 5px;
+        }
+
+        .navctrl_tabs a {
+            text-indent: -9999px;
+            overflow: hidden;
+            background: #ccc;
+            display: inline-block;
+            _display: block;
+            *display: block;
+            width: 12px;
+            height: 12px;
+        }
+
+        .navctrl_here a {
+            background: #A42145;
+        }
+
+        .caption {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            text-align: center;
+            background: #fff;
+            background: rgba(250, 250, 250, .8);
+            color: #A42145;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        /* Slider */
+        .slick-slide {
+            margin: 0px 30px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slick-list:focus {
+            outline: none;
+        }
+
+        .slick-list.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+        .slick-track:before,
+        .slick-track:after {
+            display: table;
+            content: '';
+        }
+
+        .slick-track:after {
+            clear: both;
+        }
+
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        [dir='rtl'] .slick-slide {
+            float: right;
+        }
+
+        .slick-slide img {
+            display: block;
+        }
+
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+
+        .desaturate {
+            filter: none;
+            -webkit-filter: sepia(80%) grayscale(60%) opacity(70%);
+            -moz-filter: sepia(80%) grayscale(60%) opacity(70%);
+            -ms-filter: sepia(80%) grayscale(60%) opacity(70%);
+            -o-filter: sepia(80%) grayscale(60%) opacity(70%);
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+
+        .desaturate:hover {
+            filter: none;
+            -webkit-filter: sepia(0%) grayscale(0%) opacity(100%);
+            -moz-filter: sepia(0%) grayscale(0%) opacity(100%);
+            -ms-filter: sepia(0%) grayscale(0%) opacity(100%);
+            -o-filter: sepia(0%) grayscale(0%) opacity(100%);
+        }
+
+        .acess_hover time {
+            font-size: small;
+        }
+
+        .acess_hover h4 {
+            font-weight: 400;
+        }
+
+        .acess_hover a.small-link,
+        .acess_hover a.small-link:hover {
+            background: #a42145;
+            color: #fff !important;
+            margin: 1rem auto;
+            border-radius: 50px;
+            width: 146px;
+            padding: 8px;
+            text-decoration: none !important;
+            font-size: 10px;
+            float: right;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .blog .acess_hover .row:first-child {
+            display: none;
+            margin-top: 64px;
+        }
+
+        .acess_hover {
+            margin-top: 32px;
+        }
+
+        .media-object-c {
+            border-radius: 50%;
+            border: 3px solid #B38E58;
+            width: 100%;
+        }
+
+        .structure-wrapper {
+            text-align: center;
+            color: #a42145;
+        }
+
+        .structure-wrapper a {
+            color: #000;
+            font-weight: 400;
+        }
+
+        .fichas_:nth-child(2n) {
+            margin-bottom: 1em;
+        }
+
+        .main-footer .list-info .col-sm-3:nth-child(4n)>a {
+            display: none;
+        }
+
+        .dependency .structure-wrapper {
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-bottom: 20px;
+        }
+
+        .structure-wrapper {
+            text-align: center;
+            color: #a42145;
+        }
+
+        .dependency .structure-wrapper .office-sm-structure {
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            min-height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .office-sm-structure {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-left {
+            float: left !important;
+        }
+
+        .office-sm-structure .media-object {
+            max-width: 90px;
+            height: auto;
+        }
+
+        .home img {
+            border-radius: 10px !important;
+        }
+    </style>
+</p>
+<p>
+    <style type="text/css">
+        html {
+            font-size: 14px;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            min-width: 300px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            color: #666;
+            font-family: "Montserrat";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        div,
+        h2,
+        p,
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .header h2 a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        .header h2 a:hover {
+            border-bottom-color: white;
+            opacity: 1;
+        }
+
+        .main {
+            margin: 0 auto;
+            max-width: 1040px;
+            padding: 10px;
+        }
+
+        .column {
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .article {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            color: #666;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-basis: auto;
+            margin: 10px;
+        }
+
+        .article:hover,
+        .article:focus {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            color: #444;
+        }
+
+        .article-image {
+            background: #eee;
+            display: block;
+            padding-top: 75%;
+            position: relative;
+            width: 100%;
+        }
+
+        .article-image img {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .article-image.is-3by2 {
+            padding-top: 66.6666%;
+        }
+
+        .article-image.is-16by9 {
+            padding-top: 56.25%;
+        }
+
+        .article-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .article-title {
+            color: #333;
+            flex-shrink: 0;
+            font-size: 1.4em;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .article-content {
+            flex: 1;
+            margin-top: 5px;
+        }
+
+        .article-info {
+            display: flex;
+            font-size: 0.85em;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width: 800px) {
+
+            .columns,
+            .column {
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .first-article {
+                flex-direction: row;
+            }
+
+            .first-article .article-body {
+                flex: 1;
+            }
+
+            .first-article .article-image {
+                height: 300px;
+                order: 2;
+                padding-top: 0;
+                width: 400px;
+            }
+
+            .main-column {
+                flex: 3;
+            }
+
+            .nested-column {
+                flex: 2;
+            }
+        }
+
+        @media (min-width: 1650px) {
+            .carousel-inner img {
+                width: 100%;
+                max-height: 860px;
+            }
+
+            .carousel-inner {
+                height: 500px;
+            }
+        }
+
+        h1.miBandera {
+            background: #393c3e;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: 400 !important;
+            margin-bottom: 50px !important;
+            position: relative;
+            margin-top: auto;
+        }
+
+        .h4,
+        h4 {
+            font-size: 20px;
+        }
+    </style>
+    <!--<div style="padding-top: 45px;"><img src="/work/models/sems/Resource/13343/1/images/headerEDual-02.png" class="img-responsive" alt="" /></div>-->
+</p>
+<p>
+    <style type="text/css">
+        .social-btn {
+            display: flex;
+            width: 180px;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-bottom: 5px;
+            position: relative;
+            left: -133px;
+            transition: left 1s;
+            padding: 5px 10px 5px 30px
+        }
+
+        .social-btn:hover {
+            left: -10px;
+            transition: left 1s
+        }
+
+        .social {
+            position: fixed;
+            top: 50%;
+            z-index: 200
+        }
+
+        .social a {
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: capitalize
+        }
+
+        .social a:hover {
+            text-decoration: none !important
+        }
+
+        .color-facebook {
+            background-color: #3b5998
+        }
+
+        .color-instagram {
+            background-color: #f62782;
+            background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 60%, #d6249f 80%, #285AEB 97%)
+        }
+
+        .color-twitter {
+            background-color: #00acee
+        }
+
+        .color-youtube {
+            background-color: red
+        }
+
+        .social-btn img {
+            width: 40px
+        }
+
+        .social-btn p {
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        .icon-facebook {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxElEQVR4nNWXu0oDQRSGE0XxWgk+gKVgFUijIlELIZXgK1hZaBGtTSFeOzvBUnwJIYqoTXwBESWiklhokUYF88khA07iZHdmLxF/2CY7/yU755ydTST+C4BOYBLYA66ACvCpror6bReYkLVRGvcCa8rEFrJ2FegJa74APBAcJWA+iHESWAdqhIdobAEdtuYdwDHR40j+mE2ADeJD3mbPawGEH4FL1QnXwGuLdbWWNUG92l0LTgzTBq0hn8L83R3UW80FRa828+HmTEOm4hgg47OdXig3dAX1CeeCN1NbqUc/AmQtNMZ1ooxXFxQN5ovAl4PGjk6WYnLBqSHAiaPGhU5+cSQXDAEKjhplnfzxBwHedXLVgjDqVfVNYcYs9Ko64dZvta250hu2CHCjE84jDpC2CHCmE7YtCEvArLpSBtOUdv/QQm9TJ0/T/iKc0sndwHMbAzwBXc0CuTYGWDEVTr96ScQdQJ50X6vqnbM8kAQNINpZo7njiylogJ8XkM+JeD+GAAcuJ+OkpPXYDpcANTVn/E/EzVBDpRQigHBnEmEADErbAPcOAe6AZWAglHmi0UDOjTIx86ZiUlsmX1OZSD9O48Y3QGWlCM160NoAAAAASUVORK5CYII=) 50% 50% no-repeat;
+            background-size: 100%
+        }
+
+        .icon-instagram {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACe0lEQVR4nLWXPU9UQRSGb5YEK6Va3e2IhCix0rXXP2E2WhpCpUIDsv4EvzpC1IJK+Q0rJn4FWLRAKRD1F6BIpY0YH3PCTHxzd+4X9+6bTAhzPt535sycnRtFGQBqQBM4XXBYTC0rfxDACDAPvAf+cHRY7DvgtuXMS34V2KN6fAfaWeR3gL+xFawBT4FHBYfFrMd20HJ3ksivCbn9XQBO5dq29EU1gMVY7nao5nvicL0scUDIpOzEN+CEGjtiXKiQ9BxwSf630njMqaOddsNB3m03P6DlRl+MrRD45fJednNNORMb3nHIERtWM0iPATPAVuCUfwSmgWHnOwx8BX4CE5JjXRZb84fE41kK+QTwJcd12wHOioj/tT6cWxbfhk2MysRSCvm++P0GusADN7puzmPfiwjkWhK/0UwBbts/i88ra7UBvzFn8/jky1FWwIzYX4aSiq9t+Rvxv1mFgC3Z9r6VB/zHpRwfSgng8Kp5dLPIJW5F4k6WEXBRbHcLCLgvca0yAlpiu1dAgN0Mj/NVleB5AQEvJK5+ZAEG1+FwB2ssyncIfWfdDNgLC5gW++sc1/Ct+N+oqhHtiI/d8/GElSv5diWNyGBtNdaKD9xVe+jGimy74QdwJgogJKAhE8uhIBFh7TUL20nkST9GQ6J+LSlQanzLOlyAeNNqnnZGXI6eHOqan7SnM+6x0EhLIInqwAU36jlj9EHSU4O92z0WowEBeCI8s2oYce92/yidHAD5lJDvAsfjDu3YN4E9IJsVENu2P5a8xnElybkT+DDplfgw2Qh8mMxnKW5LOarEbuLKo34R9qSecyvQBlMUdtVsB2f7al6ghgP9PP8HNHUX5N6MSkcAAAAASUVORK5CYII=) 50% 50% no-repeat;
+            background-size: 100%
+        }
+
+        .icon-twitter {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACo0lEQVR4nO3ZW6jNWRzA8e0acuq4HGU8IHkYMfKAlylFLlGjoZQol/CApDx4c4splHjAw+RB8eSFZBqZTm5N5NJ0HsiDB0VEoYmDcfloZY12J9ve/73X2XvL/1u7dv9a67e+q///t9b6rUIhJycnJ+d7Bf0L3yIYjV34B50+8QI3sA0jy7WvNFA/tKUaeFG/vbEbb3ydTuxAr6K2PTAT57Gp0oDrcRUDE0oMwF+ycRoL8DsexGf30FJp0Oux0Z8p3t84myfUzhtMrzRoC94XNb6MwTWKLEog0Ylf0RMzsLpc0HFf6ORWeF6DyO0aJT7gJP7AY9zH8HJBfyzR2cuys/Dl/n6SlheYWulHGWagFCFrTMwgsjahxCNMzjKLd8t0+A5Hw2xX0NfORBJ3Kl4/ioJvyRAgpNQVpRICticS2ZdJIgb/Af9mDPQfLmAPFmJ8kMOqRCJ7M4tEmeWJBhBewxRsySowAmPi/zC7zcL6rCKT44J4Dr/houZgblaRoWXSb6MYm0kkyoTtdDPxJOzXqhFZrbk4lVkiivRFh+ZhTVUiUWYCnjXawKf0PaxqkSgzpehA0yjO1CRRJNMWT2hh5W4Ec1JI9MG0eEaZj0t1luioKluVkLmiccxLIhFFZjVIoj2ZRJHMoTpLvPx/v9cd9ajjdRRZl1yiS0lnQxXnlKwc6zaJLkKt2IizsZrxNqHE36FmUBeRLq/bZrxKJHETg+ot8TOuSUc497fWa/ADYsUw9boSMmKf1IOdFH+hqDYbS7E1FhVeJxZ4iF+SCnQ5HR6ooOxfC6Hv/RhS6G4wBocTb+Of4yBGdbtAiQufxfGeIgwkK0/jdcKyuqfVUsRyftgFr4xloiOxQh6qLO3hOBpX/3CltiR+a59vnHJycnJyCkV8BN1HAYNkXTE1AAAAAElFTkSuQmCC) 50% 50% no-repeat;
+            background-size: 100%
+        }
+
+        .icon-youtube {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVR4nO3ZT4hNURzA8Wcyk5qIQViRBRY2TIqiKdlamvInG6Vko8liSmnSlGQlbJSxsMGUDZ6EjCQbZApJ1lLIQrFAH9066na678XMvc87db91Vvf1+93v651zfu/3azRqampqalIE/ViONRgMazN2FKw/zzdiNRajtxMvOYCtOIjTuIz7eIVP+KkcvuE9nuEGLuA4dmE9+mby8vNwFNO6h++YxLa/lVgbvu1u5RdOYU47iUV4Kw1G24lkpqnwAytbibyRFkeKJOYGy5S4VCSySno8KRIZkh5fikT2lxD4KT7rLCtikWMlBB0PJcfZDu63oSqO3vHoYr2peoZjkXNliuTiZoXiS9VxOE44UYVIiN0bis6PymcsTna1KpGokj5T8v45HyfJSudKRXK51qGpHK7FwbP/GB0RifbP61nmfBAHnfoPIjvxbpY5H8VB7yb607odB28mutkn4yTXKz5+R7LaSPlMxMkuJnohnowTZh2SFEuUkVhkNNGicU8skvWPUizjt8QiWecvRZbFIvOlx9fC/hY+SIvpouM+E7knLa60EjkkLYYbbW7gh9KgiZ5CkSCzNCuNdTd3sLClRE6mBwfwWHd14aewt20nvo3UAmzCPpwINdktvAinXDa3KHPQ8zw36BnD7nDH9f/zy89Atg9LwihtMLfisdv23LMN4fMDHRm91dTU1NQ0KuI3PorRs6xvl7QAAAAASUVORK5CYII=) 50% 50% no-repeat;
+            background-size: 100%
+        }
+
+        .icon-share {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVR4nO3VTysEYRzA8XkNnJQU7pKypUXIRd6REq7KSdI6kz9RDrscUZaX4M4L4A3Yj6bdLW07++yyzyjt9zQ103y/8/yemUmSAf8VrOIUz7jAep7yLe3Zy0M+rzNxVwJHgYDz2AHlQEA1pnwWL4GA41jisjA1LMUU13CJHXy2kW/0cvMJLGKsB/HUt2umsY8KDjHXrXgSjy31txjpRvwrMIy3jPm9RxM3acwutIn6L26C+0DAdRIT3P11wHYXI7iKOYIhvGbIP3IJUX//H1pklcZrWGgc5xIyjgWMtjkXDMEMDnCDEooxIgsZIVmf4s2+R2SEdGIliYV6SOh3fBItIKWLlajGDigFAs5iBxQbGy6LtagBKeluz5DvJnmB5XTD4Sld9lyefEDyA74AGXMEK//4IKoAAAAASUVORK5CYII=) 50% 50% no-repeat;
+            background-size: 100%;
+            margin: 9px 7.5px
+        }
+
+        .icon-cerrado {
+            order: 2;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR4nM2XQRKCMAxFi+NK9BZyYwcWnkVZcLDnMLajdFDStBD+Ovlv0pQ0OLcXAUegKejXjJ5LQTXQ81YLVBnAynvgPetfgSfgyVR34KCE3iKvAbjMHW+oNFaXUrmHjjlz6ifH7vvwTyL4AjToGieFfqjgQmgr7QuSnufkqg2yoRqjYtDEfnXCmLRZgKyaMpUWhOuhGfB8qAJeDmoGxuKosbhcWHxOWAwQLEYmFo8EVs8iFosAVqsPVsve13r7WHm9Pe9noXefhO1/YbbUCy46wzuSr0qSAAAAAElFTkSuQmCC) 50% 50% no-repeat;
+            background-size: 100%;
+            margin: 9px
+        }
+
+        .social-share-btn {
+            bottom: 5%;
+            right: 1%;
+            position: fixed
+        }
+
+        .share-boton {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.2);
+            background: #bc955c
+        }
+
+        .share-boton .icon-share {
+            margin-right: 2px
+        }
+
+        .share-boton>div:hover {
+            color: #405de6
+        }
+
+        .share-boton:active:not(:focus-within) {
+            box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2) inset
+        }
+
+        .share-boton:active:not(:focus-within)>div {
+            transform: translate(0.8px, 0.8px)
+        }
+
+        .social-share {
+            position: absolute;
+            bottom: 50px;
+            display: none;
+            right: 0
+        }
+
+        .toggle input[type="checkbox"]:checked+.share-boton .social-share {
+            animation: fadeIn 1s;
+            display: block
+        }
+
+        .toggle input[type="checkbox"]:not(:checked)+.share-boton .social-share {
+            animation: fadeOut 1s
+        }
+
+        .toggle input[type="checkbox"]:checked+.share-boton .icon-share {
+            display: none
+        }
+
+        .toggle input[type="checkbox"]:not(:checked)+.share-boton .icon-cerrado {
+            display: none
+        }
+
+        .social-share a {
+            margin: 0 12px
+        }
+
+        .share-back {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%
+        }
+
+        .share-back div {
+            margin: 4px
+        }
+
+        input[type="checkbox"] {
+            display: none
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .social-share-btn {
+            display: none
+        }
+
+        @media only screen and (max-width: 600px) {
+            .social {
+                display: none
+            }
+
+            .social-share-btn {
+                display: block
+            }
+        }
+    </style>
+</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active">&nbsp;</li>
+        <li data-target="#myCarousel" data-slide-to="1">&nbsp;</li>
+        <li data-target="#myCarousel" data-slide-to="2">&nbsp;</li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active"><a
+                href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/en_que_consiste_modelo_mexicano_formacion_dual"
+                target="_blank"> <img src="/work/models/sems/Resource/13344/1/images/BANNERS_ED-01(1).png"
+                    alt="FormacionDual" style="width:100%" /></a>
+            <div class="carousel-caption">&nbsp;</div>
+        </div>
+        <div class="item"><img src="/work/models/sems/Resource/13344/1/images/Edual_Carrusel1-02-V2.jpg" alt=""
+                style="width:100%;" />
+            <div class="carousel-caption">&nbsp;</div>
+        </div>
+        <div class="item"><img src="/work/models/sems/Resource/13344/1/images/Edual_Carrusel2-02-V2 (1).jpg"
+                alt="Educandos" style="width:100%;" />
+            <div class="carousel-caption">&nbsp;</div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span
+            class="sr-only">Previous</span></a> <a class="right carousel-control" href="#myCarousel" role="button"
+        data-slide="next"> <span class="sr-only">Next</span> </a>
+</div>
+<div class="social-share-btn"><label for="toggle" class="toggle"> <input type="checkbox" id="toggle" />
+        <div class="share-boton">
+            <div class="icon-share">&nbsp;</div>
+            <div class="icon-cerrado">&nbsp;</div>
+            <div class="social-share"><a href="https://www.facebook.com/SEPmx/">
+                    <div class="share-back color-facebook">
+                        <div class="icon-facebook">&nbsp;</div>
+                    </div>
+                </a>x <a href="https://www.instagram.com/sepmx/">
+                    <div class="share-back color-instagram">
+                        <div class="icon-instagram">&nbsp;</div>
+                    </div>
+                </a> <a href="https://twitter.com/SEP_mx">
+                    <div class="share-back color-twitter">
+                        <div class="icon-twitter">&nbsp;</div>
+                    </div>
+                </a> <a href="https://www.youtube.com/canalsep">
+                    <div class="share-black color-youtube">
+                        <div class="icon-youtube">&nbsp;</div>
+                    </div>
+                </a></div>
+        </div>
+    </label></div>
+<div class="social"><a href="https://www.facebook.com/SEPmx/">
+        <div class="social-btn color-facebook">
+            <div class="icon-facebook">&nbsp;</div>
+            <p class="order-1">Facebook</p>
+        </div>
+    </a> <a href="https://www.instagram.com/sepmx/">
+        <div class="social-btn color-instagram">
+            <div class="icon-instagram">&nbsp;</div>
+            <p class="order-1">instagram</p>
+        </div>
+    </a> <a href="https://twitter.com/SEP_mx">
+        <div class="social-btn color-twitter">
+            <div class="icon-twitter">&nbsp;</div>
+            <p class="order-1">twitter</p>
+        </div>
+    </a> <a href="https://www.youtube.com/canalsep">
+        <div class="social-btn color-youtube">
+            <div class="icon-youtube">&nbsp;</div>
+            <p class="order-1">youtube</p>
+        </div>
+    </a></div>
+<div class="container">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2>Educaci&oacute;n Dual en Nivel Medio Superior</h2>
+    <hr class="red" />
+    <p>La Educaci&oacute;n Dual con Formaci&oacute;n en Escuela y Empresa es una opci&oacute;n educativa para los
+        educandos de bachillerato tecnol&oacute;gico, profesional t&eacute;cnico y profesional t&eacute;cnico bachiller
+        de modalidad mixta que tiene por objetivo central incrementar el bienestar de los educandos y su desarrollo
+        integral.</p>
+    <p>La implicaci&oacute;n m&aacute;s importante de la modalidad mixta es que las actividades de aprendizaje previstas
+        en el plan de estudios se desarrollan tanto en la escuela que lo ofrece, como en las empresas que forman parte
+        del Sistema de Educaci&oacute;n Dual (SED).</p>
+    <p>&nbsp;</p>
+    <br />
+    <p><a href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/en_que_consiste_modelo_mexicano_formacion_dual"
+            target="_blank">Seguir leyendo...</a></p>
+</div>
+<p>&nbsp;</p>
+<div class="container">
+    <h2 style="text-align: center;">OFERTA EDUCATIVA</h2>
+    <div class="pleca-roja mid-buffer">&nbsp;</div>
+    <h2 class="sr-only">&Oacute;rganos desconcentrados y descentralizados</h2>
+    <div class="customer-logos">
+        <div class="slide"><a href="https://www.conalep.edu.mx/oferta" target="_blank"><img class="desaturate"
+                    src="/work/models/sems/Resource/13670/1/images/190 x 190-01.png"
+                    style="width: 65%!important; margin-top: 16%!important;" alt="" /></a></div>
+        <div class="slide"><a href="http://www.dgcft.sems.gob.mx/" target="_blank"><img class="desaturate"
+                    src="/work/models/sems/Resource/13670/1/images/190 x 190-02.png"
+                    style="width: 65%!important; margin-top: 8%!important;" alt="" /></a></div>
+        <div class="slide"><a href="https://cecyte.edu.mx/" target="_blank"><img class="desaturate"
+                    src="/work/models/sems/Resource/13670/1/images/190 x 190-07.png"
+                    style="width: 65%!important; margin-top: 8%!important;" alt="" /></a></div>
+        <div class="slide"><a href="https://dgetaycm.sep.gob.mx" target="_blank"><img class="desaturate"
+                    src="/work/models/sems/Resource/13354/1/images/DGETAyCM-2000px.png"
+                    style="width: 65%!important; margin-top: 50%!important;" alt="" /></a></div>
+        <div class="slide"><a href="https://direccionacademica.ceti.mx/subdir_docencia/oferta_educativa.php"
+                target="_blank"><img class="desaturate" src="/work/models/sems/Resource/13344/1/images/ceti.jpeg"
+                    style="width: 47%!important; margin-top: 8%!important;" alt="" /></a></div>
+    </div>
+    <div class="pleca-roja mid-buffer">&nbsp;</div>
+</div>
+<div class="container">
+    <div class="row">
+        <center>
+            <div class="col-md-1">&nbsp;</div>
+            <div class="col-md-2"><a href="http://modeloqa.formaciondual.sems.gob.mx/exitos/" target="_blank"><img
+                        class="img-responsive" src="/work/models/sems/Resource/13670/1/images/190 x 190-04.png"
+                        alt="" /></a></div>
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-2"><a href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/beneficios_mmfd"
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/190 x 190-05.png" alt="" /></a></div>
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-2"><a href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/actores_mmfd"
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/190 x 190-06.png" alt="" /></a></div>
+            <div class="col-md-1">&nbsp;</div>
+        </center>
+    </div>
+</div>
+<p>&nbsp;</p>
+<div class="container">
+    <h2 style="text-align: center;">MULTIMEDIA</h2>
+    <br />
+    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/BXgQHpKk3i4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe></div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="row">
+        <div class="col-md-4"><iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/671Vhdxh3os?si=vZYSYOMpDwHWHIbl" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            <p><strong>La Educación Dual en CETI</strong></p>
+        </div>
+        <div class="col-md-4"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1E-hsaGE5vc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            <p><strong>Educaci&oacute;n Dual en Conalep</strong></p>
+        </div>
+        <div class="col-md-4"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J2S3O-X9Jvc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            <p><strong>Educaci&oacute;n Dual en el Sector Automotriz</strong></p>
+        </div>
+
+
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="row">
+
+        <div class="col-md-4"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3eJZUanyTRw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            <p><strong>Educaci&oacute;n Dual enDdiferentes Sectores Industriales</strong></p>
+        </div>
+        <div class="col-md-4"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xDw1___bNVo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            <p><strong>Educaci&oacute;n Dual en el Sector Ap&iacute;cola</strong></p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+    <h2 style="text-align: center;">DIFUSI&Oacute;N</h2>
+    <br />
+    <div class="row">
+        <div class="col-md-4"><img class="img-responsive"
+                src="/work/models/sems/Resource/13670/1/images/FireShot Capture 150 - Monitoreo Educaci&Atilde;&sup3;n Dual - monitoreoeducaciondual_org_mx.png"
+                alt="" /> <br />
+            01 de Agosto de 2023
+            <p><strong> RESULTADOS DE LA ENCUESTA DE MONITOREO Y EVALUACI&Oacute;N DEL SISTEMA DE EDUCACI&Oacute;N DE
+                    EDUCACI&Oacute;N DUAL EN M&Eacute;XICO 2022 &ndash; 2023. </strong></p>
+            <p><a target="_blank" href="https://monitoreoeducaciondual.org.mx/resultados2022-2023.html ">continuar
+                    leyendo</a></p>
+        </div>
+        <div class="col-md-4"><img class="img-responsive"
+                src="https://www.gob.mx/cms/uploads/image/file/806405/talento_ing.png" alt="" /> <br />
+            02 de agosto de 2023
+            <p><strong>Talento Mexicano</strong></p>
+            <p><a target="_blank"
+                    href="https://www.gob.mx/se/acciones-y-programas/talento-mexicano-334868#:~:text=Talento%20mexicano%20para%20el%20crecimiento%20y%20la%20relocalizaci%C3%B3n.&amp;text=Se%20trata%20de%20una%20iniciativa,y%20para%20aprovechar%20la%20relocalizaci%C3%B3n">continuar
+                    leyendo</a></p>
+        </div>
+        <div class="col-md-4"><img class="img-responsive"
+                src="https://www.gob.mx/cms/uploads/article/main_image/127486/IMG-20221202-WA0005.jpg" alt="" /> <br />
+            02 de agosto de 2023
+            <p><strong>Colaboraci&oacute;n con sector empresarial para ampliar el Sistema de Educaci&oacute;n Dual en
+                    nivel Media Superior: SEP</strong></p>
+            <p><a target="_blank"
+                    href="https://www.gob.mx/sep/articulos/boletin-sep-no-187-colaboracion-con-sector-empresarial-para-ampliar-el-sistema-de-educacion-dual-en-nivel-media-superior-sep">continuar
+                    leyendo</a></p>
+        </div>
+    </div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+    <h2 style="text-align: center;">RECURSOS</h2>
+    <br />
+    <br />
+    <center>
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-2"><a href="http://modelo.formaciondual.sems.gob.mx/" target="_blank"> <img
+                        class="img-responsive" src="/work/models/sems/Resource/13670/1/images/215 X 180-01(2).png"
+                        alt="" /></a></div>
+            <div class="col-md-2"><a
+                    href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/en_que_consiste_modelo_mexicano_formacion_dual        "
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-02(1).png" alt="" /></a></div>
+            <div class="col-md-2"><a
+                    href="https://www.gob.mx/becasbenitojuarez/articulos/beca-benito-juarez-para-jovenes-de-educacion-media-superior-216589        "
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-03(1).png" alt="" /></a></div>
+            <div class="col-md-2"><a href="https://www.gob.mx/becasbenitojuarez/articulos/becas-elisa-acuna"
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-04(1).png" alt="" /></a></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+    </center>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+    <h2 style="text-align: center;">CON&Oacute;CE M&Aacute;S</h2>
+    <br />
+    <br />
+    <center>
+        <div class="row">
+            <div class="col-md-1">&nbsp;</div>
+            <div class="col-md-2"><a
+                    href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/Criterios_para_la_autorizacion_de_la_imparticion_de_planes_y_programas_de_estudio_del_tipo_medio_superior_mediante_los_estudios_de_pertinencia_factibilidad_y_prospectiva        "
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-05(1).png" alt="" /></a></div>
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-2"><a
+                    href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/Lineamientos_Generales_para_la_imparticion_del_Tipo_Medio_Superior_mediante_la_Opcion_de_Educacion_Dual        "
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-06(1).png" alt="" /></a></div>
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-2"><a
+                    href="https://educacionmediasuperior.sep.gob.mx/es_mx/sems/Metodologia_y_criterios_para_la_planificacion_de_la_Educacion_Dual_en_Media_Superior        "
+                    target="_blank"><img class="img-responsive"
+                        src="/work/models/sems/Resource/13670/1/images/215 X 180-07(1).png" alt="" /></a></div>
+            <div class="col-md-1">&nbsp;</div>
+        </div>
+    </center>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<p>
+<section class="structure dependency list-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Directorio</h3>
+                <hr class="red" />
+                <div class="structure-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 office-sm-structure pull-left"><img
+                                    alt="Foto de Martha Velda Hern&aacute;ndez Moreno"
+                                    class="media-object pull-left right-mini-space"
+                                    src="https://www.gob.mx/cms/uploads/structure/main_image/5654/WhatsApp_Image_2022-11-17_at_07.10.06.jpeg"
+                                    style="margin-right: 8px;" />
+                                <div class="figure">
+                                    <h5 class="structure-heading"><a
+                                            href=" https://www.gob.mx/sep/estructuras/nora-ruvalcaba-gamez">Nora
+                                            Ruvalcaba G&aacute;mez</a></h5>
+                                    <span class="attribues small">Subsecretaria de Educaci&oacute;n Media
+                                        Superior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</p>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<div class="container">
+    <section class="press list-article documents bottom-buffer">
+        <div class="clearfix">
+            <h2><span tabindex="0">Informaci&oacute;n de Contacto</span></h2>
+        </div>
+        <hr class="red" />
+        <div class="row">
+            <div class="col-md-4">
+                <address tabindex="0">Rep&uacute;blica de Argentina #28, <br />
+                    Centro Hist&oacute;rico, Ciudad de M&eacute;xico (CDMX). C.P. 06020<br />
+                    <br />
+                    Tel&eacute;fono: (55) 36017599 <br />
+                    Atenci&oacute;n a la ciudadan&iacute;a: 55 36 01 10 00 ext. 50652 <br />
+                    Correo: <a href="mailto:atencion.sems@sems.gob.mx">atencion.sems@sems.gob.mx</a> <br />
+                    Secretar&iacute;a de Educaci&oacute;n P&uacute;blica <br />
+                    <input name="organization[latitude]" type="hidden" value="19.4367689005793" /> <input
+                        name="organization[longitude]" type="hidden" value="-99.1316986083984" />
+                </address>
+                <div><a class="sendEst" href="http://www.educa.sep.gob.mx/EDUCA/CapPeticionWebCNT">
+                        <h4>Ingresa tu petici&oacute;n aqu&iacute;</h4>
+                    </a></div>
+            </div>
+            <div class="col-md-8"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4296792325295!2d-99.13422448518718!3d19.437032786881822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f933acf93e7f%3A0x58834e0a0693c487!2sAv.+Rep%C3%BAblica+de+Argentina+28%2C+Centro+Hist%C3%B3rico%2C+Centro%2C+06000+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1sen!2smx!4v1517418596201"
+                    width="100%" height="440" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>    $(document).ready(function () { $('.customer-logos').slick({ slidesToShow: 3, slidesToScroll: 1, autoplay: true, autoplaySpeed: 1500, arrows: false, dots: false, pauseOnHover: false, responsive: [{ breakpoint: 768, settings: { slidesToShow: 3 } }, { breakpoint: 520, settings: { slidesToShow: 2 } }] }); });</script>
